@@ -15,4 +15,4 @@ jobs:
         uses: actions/deploy-pages@v1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: gh-pages # Change to 'master' if you use the main branch for deployment
+          branch: main
