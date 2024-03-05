@@ -12,7 +12,7 @@ Testing the application:
 The application comes with 3 unit tests written in Jest.
 1. getWeatherData.test.js: Tests if getWeatherData throws an error for non-200 status codes.
 2. displayError.test.js: Tests if displayError sets the error message content correctly.
-3.displayWeatherInfo.test.js: Tests if displayWeatherInfo displays the correct information based on the provided data.
+3. displayWeatherInfo.test.js: Tests if displayWeatherInfo displays the correct information based on the provided data.
 
 Coding guidelines and standards:
 
