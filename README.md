@@ -44,7 +44,7 @@ Code Review Process:
 4. Reviewing Pull Requests:
 1. Reviewers should assess the code for adherence to these coding standards and overall quality.
 2. Provide constructive feedback on the pull request, indicating:
--     Whether the issue is fixed and adheres to standards.
--     Suggestions for improvement if the merge is not approved.
--     Advice on next steps or missing elements to complete the fix.
+   1. Whether the issue is fixed and adheres to standards.
+   2. Suggestions for improvement if the merge is not approved.
+   3. Advice on next steps or missing elements to complete the fix.
 
