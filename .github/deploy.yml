@@ -11,8 +11,27 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Deploy to GitHub Pages
+      - name: Install dependencies
+        run: npm install  # Install project dependencies
+
+      - name: Run tests
+        run: npm test  # Execute unit tests
+
+      - name: Deploy to GitHub Pages (if tests pass)
         uses: actions/deploy-pages@v1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: main
+          branch: main  
+        condition: success()  # Only deploy if tests pass
+
+  test-and-build:  
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run tests
+        run: npm test
