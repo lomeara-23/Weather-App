@@ -9,7 +9,13 @@ Running the application:
 5. Click the "Submit" button or press Enter on your keyboard.
 
 Testing the application:
-1. The application comes with 3 unit tests written in Jest.
-getWeatherData.test.js: Tests if getWeatherData throws an error for non-200 status codes.
-displayError.test.js: Tests if displayError sets the error message content correctly.
-displayWeatherInfo.test.js: Tests if displayWeatherInfo displays the correct information based on provided data.
+The application comes with 3 unit tests written in Jest.
+1. getWeatherData.test.js: Tests if getWeatherData throws an error for non-200 status codes.
+2. displayError.test.js: Tests if displayError sets the error message content correctly.
+3.displayWeatherInfo.test.js: Tests if displayWeatherInfo displays the correct information based on provided data.
+
+Coding guidelines and standards:
+1. Use consistent indentation (2 spaces) and formatting.
+2. Use meaningful variable and function names. Variables should be camel case.
+3. Add comments to explain complex logic. 
+4. Follow best practices for asynchronous programming (e.g., using async/await syntax).
