@@ -69,3 +69,17 @@ p{
     font-weight: bold;
     color:hs1(0,0%,0%, 0.75);
 }
+.unitSwitch{
+    background-color: transparent;
+    border: none;
+    font-size: 1.5em;
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+}
+#Far{
+    color:#8C8C8C;
+}
+#Cel{
+    color:#B3B6B7;
+}
