@@ -22,7 +22,7 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: main  
-        condition: success()  # Only deploy if tests pass
+        if: success()  # Only deploy if tests pass
 
   test-and-build:  
     runs-on: ubuntu-latest
@@ -32,6 +32,9 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+
+      - name: Lint code
+        run: npm run lint  # Execute linting checks
 
       - name: Run tests
         run: npm test
