@@ -21,7 +21,7 @@ jobs:
         uses: actions/deploy-pages@v1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: main  
+          branch: $DEFAULT_BRANCH  # Deploy to the default branch
         if: success()  # Only deploy if tests pass
 
   test-and-build:  
@@ -38,4 +38,3 @@ jobs:
 
       - name: Run tests
         run: npm test
-
