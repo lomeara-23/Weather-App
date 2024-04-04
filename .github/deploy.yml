@@ -1,8 +1,8 @@
 name: Deploy to GitHub Pages
 
 on:
-  push:
-    branches: [ master ]
+  pull_request:
+    branches: [ '*' ]  # Run on pull requests from all branches
 
 jobs:
   build-and-deploy:
@@ -38,3 +38,4 @@ jobs:
 
       - name: Run tests
         run: npm test
+
