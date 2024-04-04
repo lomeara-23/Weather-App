@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on: [push, pull_request]
 
 jobs:
-  build-and-deploy:
+  deploy: # Match the name of the first required status check
     runs-on: ubuntu-latest
 
     steps:
@@ -22,7 +22,7 @@ jobs:
           branch: $DEFAULT_BRANCH  # Deploy to the default branch
         if: success()  # Only deploy if tests pass
 
-  test-and-build:  
+  report-build-status: # Match the name of the second required status check
     runs-on: ubuntu-latest
 
     steps:
@@ -36,3 +36,4 @@ jobs:
 
       - name: Run tests
         run: npm test
+
