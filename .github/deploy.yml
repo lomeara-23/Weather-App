@@ -1,8 +1,6 @@
 name: Deploy to GitHub Pages
 
-on:
-  pull_request:
-    branches: [ '*' ]  # Run on pull requests from all branches
+on: [push]
 
 jobs:
   build-and-deploy:
