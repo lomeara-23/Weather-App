@@ -1,6 +1,6 @@
 // getWeatherData.test.js
 
-test("getWeatherData throws error for non-ok status code", async () => {
+test  = ("getWeatherData throws error for non-ok status code", async () => {
     // Mock the fetch function to return a response with non-ok status code
     const mockFetch = jest.fn().mockResolvedValueOnce(new Response(null, { status: 404 }));
     global.fetch = mockFetch;

@@ -1,6 +1,6 @@
 // displayWeatherInfo.test.js
 
-test("displayWeatherInfo displays correct information", () => {
+test = ("displayWeatherInfo displays correct information", () => {
     const mockData = {
       name: "London",
       main: { temp: 283.15, humidity: 70 },
