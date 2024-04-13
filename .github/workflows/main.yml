@@ -21,7 +21,7 @@ jobs:
       - name: Run unit tests
         run: |
           node displayError.test.js
-          node displayWeather.test.js
+          node getWeather.test.js
           node displayWeatherInfo.test.js
 
       - name: Lint code
