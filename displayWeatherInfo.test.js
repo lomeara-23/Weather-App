@@ -1,3 +1,5 @@
+/* global test expect */
+
 // displayWeatherInfo.test.js
 
 test = ("displayWeatherInfo displays correct information", () => {

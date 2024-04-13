@@ -1,3 +1,4 @@
+/* global test expect */
 // displayError.test.js
 
 test = ("displayError sets the error message content", () => {

@@ -1,4 +1,6 @@
+/* global test expect */
 // getWeatherData.test.js
+
 
 test  = ("getWeatherData throws error for non-ok status code", async () => {
     // Mock the fetch function to return a response with non-ok status code
