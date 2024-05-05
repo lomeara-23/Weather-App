@@ -8,7 +8,6 @@ const apiKey = "2a7373ef312e6b15d29a6eda3c3af427";
 const unitSwitch = document.querySelector(".unitSwitch")
 var weatherData;
 var useCelsius = false;
-var temp;
 
 
 //add event listener to the form
@@ -88,9 +87,7 @@ function displayWeatherInfo(data){
     //set content for each element
     cityDisplay.textContent = city;
 
-    realTemp = calcTemp(temp);
-
-    tempDisplay.textContent = realTemp;
+    tempDisplay.textContent = calcTemp(temp);
 
 
     humidityDisplay.textContent = `Humidity: ${humidity}%`;
@@ -125,10 +122,10 @@ function displayError(message){
     card.appendChild(errorDisplay);
 }
 
-unitSwitch.addEventListener("click", function(e) {
+unitSwitch.addEventListener("click", function() {
     useCelsius = !useCelsius;
-    far = document.getElementById("Far");
-    cel = document.getElementById("Cel");
+    var far = document.getElementById("Far");
+    var cel = document.getElementById("Cel");
     if(useCelsius){
         cel.style.color = "#8C8C8C";
         far.style.color = "#B3B6B7";
